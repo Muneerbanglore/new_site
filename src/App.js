@@ -1,17 +1,18 @@
-import React from 'react'
-import { useState } from 'react';
-import  MakeYourBrand from './pages/homepage';
-import {Search } from 'lucide-react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/homepage';
+import ServicesPage from './pages/services';
 
-
-function App() { 
-
-  
-
+function App() {
   return (
-  <div>
-     <MakeYourBrand />
-  </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
