@@ -93,9 +93,9 @@ export default function MakeYourBrand() {
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         
 
-          <h1 className="text-5xl md:text-4xl lg:text-4xl font-black mb-8 leading-tight mt-10  lg:mt-20 ">
+          <h1 className="text-5xl md:text-4xl lg:text-7xl font-black mb-8 leading-tight mt-10  lg:mt-20 ">
             <span className="block text-white animate-fade-in font-raleway" style={{animationDelay: '0.1s'}}>Build Your</span>
-            <span className="block bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent animate-fade-in text-8xl md:text-7xl" style={{animationDelay: '0.2s'}}>Brand Empire</span>
+            <span className="block bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent animate-fade-in text-8xl md:text-8xl" style={{animationDelay: '0.2s'}}>Brand Empire</span>
             <span className="block text-white animate-fade-in font-raleway" style={{animationDelay: '0.3s'}}>in Dubai</span>
           </h1>
 
