@@ -11,6 +11,12 @@ import DRS from '../images/dubai-company.png'
 import shrj from '../images/sharjah.png'
 import abud from '../images/companyformation.png'
 import ajmn from '../images/business-setup.png'
+import Collabrator1 from '../images/collabrator1.png'
+import Collabrator2 from '../images/collabrator2.png'
+import Collabrator3 from '../images/collabrator3.png'
+import Collabrator4 from '../images/collabrator4.png'
+import Collabrator5 from '../images/collabrator5.jpg'
+import Collabrator6 from '../images/collabrator6.jpg'
 
 export default function MakeYourBrand() {
   const [scrollY, setScrollY] = useState(0);
@@ -79,20 +85,15 @@ export default function MakeYourBrand() {
             </div>
           </div>
         </div>
-
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute w-96 h-96 bg-red-600/25 rounded-full blur-3xl top-20 -left-48 animate-pulse"></div>
           <div className="absolute w-96 h-96 bg-red-500/20 rounded-full blur-3xl bottom-20 -right-48 animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-          <div className="inline-block mb-8 px-5 py-3 rounded-full border border-red-600/60 bg-red-600/20 backdrop-blur-sm animate-fade-in hover:bg-red-600/30 transition">
-            <span className="text-red-300 flex items-center gap-2 font-semibold">
-              <Zap size={18} /> #1 Business Setup Consultants in Dubai
-            </span>
-          </div>
+        
 
-          <h1 className="text-7xl md:text-4xl lg:text-4xl font-black mb-8 leading-tight">
+          <h1 className="text-5xl md:text-4xl lg:text-4xl font-black mb-8 leading-tight mt-10  lg:mt-20 ">
             <span className="block text-white animate-fade-in font-raleway" style={{animationDelay: '0.1s'}}>Build Your</span>
             <span className="block bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent animate-fade-in text-8xl md:text-7xl" style={{animationDelay: '0.2s'}}>Brand Empire</span>
             <span className="block text-white animate-fade-in font-raleway" style={{animationDelay: '0.3s'}}>in Dubai</span>
@@ -103,9 +104,14 @@ export default function MakeYourBrand() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center mb-20 animate-fade-in" style={{animationDelay: '0.5s'}}>
+        
             <button className="px-10 py-5 bg-gradient-to-r from-red-600 to-red-500 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105 flex items-center justify-center gap-2 group">
+                 <Link to="/services" className=" ">
+                 <div className="flex items-center gap-2">
               Start Your Journey <ArrowRight size={22} className="group-hover:translate-x-1 transition" />
-            </button>
+            </div>
+            </Link></button>
+         
             <button className="px-10 py-5 border-2 border-red-500 rounded-full font-bold text-lg hover:bg-red-500/10 transition transform hover:scale-105 flex items-center justify-center gap-2">
               <Play size={20} /> Watch Demo
             </button>
@@ -139,22 +145,22 @@ export default function MakeYourBrand() {
 
       {/* Trusted By Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-2">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-semibold text-gray-600 mb-4">TRUSTED BY LEADING COMPANIES</h3>
-            <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-500 mx-auto mb-8"></div>
+            <h3 className="text-4xl font-raleway font-semibold text-gray-600 mb-4">Trusted Leading Government Bodies <span className='block bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent animate-fade-in text-4xl md:text-4xl font-bold '>With Us</span>
+         </h3> 
             <p className="text-gray-500 max-w-2xl mx-auto">
               We're proud to be the business setup partner of choice for these industry leaders
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3  gap-2 items-center">
+            {[Collabrator1, Collabrator2, Collabrator3, Collabrator4, Collabrator5, Collabrator6].map((item) => (
               <div key={item} className="flex justify-center p-4 hover:scale-105 transition-transform duration-300">
                 <img 
-                  src={logo} 
+                  src={item} 
                   alt={`Company Logo ${item}`} 
-                  className="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity"
+                  className="h-16 lg:h-20  w-auto lg:w-40  hover:opacity-100 transition-opacity"
                 />
               </div>
             ))}
@@ -205,21 +211,22 @@ export default function MakeYourBrand() {
                 <div className="w-16 h-1.5 bg-gradient-to-r from-red-600 to-red-500 mb-6"></div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">Trade Licence Formation </h3>
                 <p className="text-gray-500 mb-2 leading-relaxed">
-                  Establish your business in the UAE mainland with full market access and local sponsorship. 
-                  Our experts guide you through the entire process, ensuring compliance with all regulations.
+                   Establish your business in the UAE mainland with a trade license, gaining full market access and local sponsorship. Our experts ensure a smooth process, guiding you through all regulatory requirements for full compliance.
                 </p>
                 <ul className="space-y-3 mb-8">
-                  {['100% foreign ownership in specific sectors', 'No restrictions on business activities', 'Direct access to local markets', 'Option for office or flexi-desk'].map((item, i) => (
+                  {['100% Foreign Ownership in specific sectors', 'No restrictions on business activities', 'Direct access to local markets', 'Option for office or flexi-desk'].map((item, i) => (
                     <li key={i} className="flex items-start">
                       <CheckCircle className="flex-shrink-0 w-5 h-5 text-red-500 mt-0.5 mr-3" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
+                 <Link to="/services" className="block w-full">
                 <button className="px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-red-600 to-red-500 hover:shadow-lg hover:shadow-red-500/30 transition-all flex items-center group">
                   Learn More
                   <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
+                </Link>
               </div>
             </div>
 
@@ -244,14 +251,14 @@ export default function MakeYourBrand() {
                   tax benefits, and full repatriation of profits.
                 </p>
                 <ul className="space-y-3 mb-8">
-                  {['100% foreign ownership', 'Tax exemptions', 'Full profit repatriation', 'No currency restrictions'].map((item, i) => (
+                  {['Easy Company Registration', 'Tax-Free Environment', 'Visa and Immigration Support', 'Strategic Location'].map((item, i) => (
                     <li key={i} className="flex items-start">
                       <CheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 mt-0.5 mr-3" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <Link to="/services#business-setup" className="inline-block">
+                <Link to="/services" className="inline-block">
                   <button className="px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all flex items-center group">
                     Learn More
                     <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -282,17 +289,19 @@ export default function MakeYourBrand() {
                   Our experts guide you through the entire process, ensuring compliance with all regulations.
                 </p>
                 <ul className="space-y-3 mb-8">
-                  {['100% foreign ownership in specific sectors', 'No restrictions on business activities', 'Direct access to local markets', 'Option for office or flexi-desk'].map((item, i) => (
+                  {['Flexible Licensing Optionss', 'Seamless Trade Facilitation', 'Affordable and Scalable Office Solutions', 'Access to Business Support Services'].map((item, i) => (
                     <li key={i} className="flex items-start">
                       <CheckCircle className="flex-shrink-0 w-5 h-5 text-red-500 mt-0.5 mr-3" />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
+                     <Link to="/services" className="block w-full">
                 <button className="px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-red-600 to-red-500 hover:shadow-lg hover:shadow-red-500/30 transition-all flex items-center group">
                   Learn More
                   <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
+                </Link>
               </div>
             </div>
 
@@ -309,26 +318,26 @@ export default function MakeYourBrand() {
               MORE SERVICES
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-raleway mb-4">
-              Main Land <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">Company Formations</span>
+              Main Land <span className="bg-red-500 bg-clip-text text-transparent">Company Formations</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Discover additional services to support and grow your business in the UAE
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8  ">
             {/* Card 1 */}
-            <div className="group bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div className="group bg-white rounded-2xl bg-red-500 shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="h-60 bg-gradient-to-r from-purple-50 to-purple-100  flex items-center justify-center">
               <img src={DRS} alt="Abudhabi Company Formations" className="w-full h-full text-purple-600" />
                 
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Dubai Registration Services</h3>
-                <p className="text-gray-600 mb-6">
-                  Streamlined visa processing for you and your employees with end-to-end support.
+                <p className="text-gray-600 mb-6 text-xs">
+              Dubai registration services provide a streamlined process for setting up businesses with full support in obtaining licenses, permits, and approvals. Whether you're starting a company in a Freezone, mainland, or offshore, Dubai offers flexible options, tax exemptions, and easy access to global markets, making it one of the most attractive destinations for business formation.
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2">
                   {['Employment Visa', 'Investor Visa', 'Family Sponsorship', 'Medical Test Assistance'].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
@@ -336,9 +345,11 @@ export default function MakeYourBrand() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-6 text-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all">
-                  Explore Visa Options
-                </button>
+                <Link to="/contact-us" className="block w-full">
+                  <button className="w-full lg:mt-14 py-3 px-6 text-center rounded-lg bg-gradient-to-r bg-red-500 text-white font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all">
+                    Register Now 
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -350,45 +361,49 @@ export default function MakeYourBrand() {
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Sharjah Company Formation</h3>
-                <p className="text-gray-600 mb-6">
-                  Professional accounting and bookkeeping services to keep your business financially healthy.
+                <p className="text-gray-600 mb-6 text-xs">
+                  Sharjah offers a cost-effective and efficient business setup with 100% foreign ownership in Freezones and tax exemptions. Its strategic location, combined with affordable office spaces and a diverse range of business activities, makes it an attractive choice for entrepreneurs looking to access both local and international markets.
                 </p>
                 <ul className="space-y-2 mb-6">
-                  {['Bookkeeping', 'VAT Filing', 'Financial Reporting', 'Audit Support'].map((item, i) => (
+                  {['Strategic Location in Sharjah', 'VCost-Effective Business Setup in Sharjah', 'Tax-Free Business Environment in Sharjah', 'Affordable Office Solutions in Sharjah'].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-6 text-center rounded-lg bg-gradient-to-r from-green-600 to-green-500 text-white font-medium hover:shadow-lg hover:shadow-green-500/30 transition-all">
-                  Get Accounting Help
-                </button>
+                <Link to="/contact-us" className="block w-full">
+                  <button className="w-full py-3 px-6 text-center rounded-lg bg-red-500 text-white font-medium hover:shadow-lg hover:shadow-green-500/30 transition-all">
+                    Register Now 
+                  </button>
+                </Link>
               </div>
             </div>
 
             {/* Card 3 */}
             <div className="group bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="h-60 bg-gradient-to-r from-purple-50 to-purple-100  flex items-center justify-center">
-              <img src={abud} alt="Abudhabi Company Formations" className="w-full h-full text-purple-600" />
+             <div className="h-60 bg-gradient-to-r from-purple-50 to-purple-100  flex items-center justify-center">
+            <img src={abud} alt="Abudhabi Company Formations" className="w-full h-full text-purple-600" />
                 
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Abudhabi Company Formations</h3>
-                <p className="text-gray-600 mb-6">
-                  Expert legal advice and support for all your business needs in the UAE.
+                <p className="text-gray-600 mb-6 text-xs">
+                 Abu Dhabi provides a dynamic business environment with 100% foreign ownership in Freezones, tax exemptions, and a straightforward company formation process. Its strategic location and world-class infrastructure make it an ideal hub for companies looking to expand within the UAE and globally.
                 </p>
                 <ul className="space-y-2 mb-6">
-                  {['Contract Drafting', 'Legal Compliance', 'Dispute Resolution', 'IP Protection'].map((item, i) => (
+                  {['Attractive Investment Opportunities in Abu Dhabi', 'No Income Tax or Corporate Tax in Abu Dhabi', 'Access to Abu Dhabi’s Expanding Economy', 'Proximity to Global Markets from Abu Dhabi'].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-6 text-center rounded-lg bg-gradient-to-r from-purple-600 to-purple-500 text-white font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
-                  Get Legal Advice
-                </button>
+                <Link to="/contact-us" className="block w-full">
+                  <button className="w-full py-3 px-6 text-center rounded-lg bg-red-500 text-white font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                    Register Now 
+                  </button>
+                </Link>
               </div>
 
               
@@ -402,20 +417,23 @@ export default function MakeYourBrand() {
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ajman Company Formations</h3>
-                <p className="text-gray-600 mb-6">
-                  Expert legal advice and support for all your business needs in the UAE.
+                <p className="text-gray-600 mb-6 text-xs ">
+               Ajman offers a cost-effective business setup with 100% foreign ownership in Freezones, no taxes, and a quick registration process. Its strategic location provides easy access to key markets, making it an ideal choice for entrepreneurs.
+
                 </p>
                 <ul className="space-y-2 mb-6">
-                  {['Contract Drafting', 'Legal Compliance', 'Dispute Resolution', 'IP Protection'].map((item, i) => (
+                  {['Affordable Setup Costs in Ajman', 'Flexible Business Structures in Ajman', 'Streamlined Licensing Process in Ajman', 'Fast-Track Visa & Immigration Services in Ajman'].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-6 text-center rounded-lg bg-gradient-to-r from-purple-600 to-purple-500 text-white font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
-                  Get Legal Advice
+                <Link to="/contact-us" className="block w-full">
+                <button className="w-full lg:mt-4 py-3 px-6 text-center rounded-lg bg-red-500 text-white font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                  Register Now 
                 </button>
+                </Link>
               </div>
 
               
