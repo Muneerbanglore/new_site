@@ -8,21 +8,16 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
+
 
 const ContactUs = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col font-sans">
       {/* Header Section */}
       <section className="text-center py-20 bg-gradient-to-b from-red-600 to-black shadow-lg">
-        <motion.h1
-          className="text-5xl md:text-6xl font-extrabold mb-4"
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           Contact <span className="text-white">Us</span>
-        </motion.h1>
+        </h1>
         <p className="text-gray-300 text-lg max-w-xl mx-auto px-4">
           We’d love to hear from you! Reach out to us for support, partnership, or collaboration.
         </p>
@@ -30,46 +25,29 @@ const ContactUs = () => {
 
       {/* Info Section */}
       <section className="flex flex-col md:flex-row justify-around items-center py-16 px-6 md:px-20 bg-black">
-        <motion.div
-          className="flex flex-col items-center text-center mb-12 md:mb-0 hover:scale-105 transition-transform"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div className="flex flex-col items-center text-center mb-12 md:mb-0 hover:scale-105 transition-transform">
           <FaMapMarkerAlt className="text-red-500 text-5xl mb-4" />
           <h3 className="text-2xl font-bold mb-2 text-white">Our Location</h3>
           <p className="text-gray-300 leading-relaxed">
             Mai Tower, Al Nahda - Dubai
           </p>
-
-           <p className="text-gray-300 leading-relaxed">
-             Kollam Kerala -India
+          <p className="text-gray-300 leading-relaxed">
+            Kollam Kerala -India
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex flex-col items-center text-center mb-12 md:mb-0 hover:scale-105 transition-transform"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
+        <div className="flex flex-col items-center text-center mb-12 md:mb-0 hover:scale-105 transition-transform">
           <FaPhoneAlt className="text-red-500 text-5xl mb-4" />
           <h3 className="text-2xl font-bold mb-2 text-white">Call Us</h3>
           <p className="text-gray-300">7306950143</p>
-         
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex flex-col items-center text-center hover:scale-105 transition-transform"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
+        <div className="flex flex-col items-center text-center hover:scale-105 transition-transform">
           <FaEnvelope className="text-red-500 text-5xl mb-4" />
           <h3 className="text-2xl font-bold mb-2 text-white">Email</h3>
           <p className="text-gray-300">support@makeyourbrand.ae</p>
           <p className="text-gray-300">info@makeyourbrand.ae</p>
-        </motion.div>
+        </div>
       </section>
 
       {/* Map Section */}
