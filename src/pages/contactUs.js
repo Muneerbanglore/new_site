@@ -45,8 +45,8 @@ const ContactUs = () => {
         <div className="flex flex-col items-center text-center hover:scale-105 transition-transform">
           <FaEnvelope className="text-red-500 text-5xl mb-4" />
           <h3 className="text-2xl font-bold mb-2 text-white">Email</h3>
-          <p className="text-gray-300">support@makeyourbrand.ae</p>
-          <p className="text-gray-300">info@makeyourbrand.ae</p>
+          <p className="text-gray-300">support@makeyorbrand.com</p>
+          <p className="text-gray-300">info@makeyorbrand.com</p>
         </div>
       </section>
 
@@ -102,7 +102,7 @@ const ContactUs = () => {
 
       {/* Footer */}
       <footer className="bg-black text-gray-400 text-center py-6 border-t border-gray-700">
-        © {new Date().getFullYear()} makeyourbrand Pvt. Ltd. All Rights Reserved.
+        © {new Date().getFullYear()} MakeYorBrand Pvt. Ltd. All Rights Reserved.
       </footer>
     </div>
   );

@@ -18,7 +18,7 @@ import Collabrator4 from '../images/collabrator4.png'
 import Collabrator5 from '../images/collabrator5.jpg'
 import Collabrator6 from '../images/collabrator6.jpg'
 
-export default function MakeYourBrand() {
+export default function MakeYorBrand() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function MakeYourBrand() {
       <nav className="fixed top-0 w-full z-50 bg-transparent  border-b border-red-600/20">
         <div className="max-w-7xl mx-auto px-2 py-2 flex justify-between items-center">
           <div className="text-3xl font-black bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-            <img src={logo} alt="MakeYourBrand Logo" className="h-40 w-40 rounded-md inline-block "/>
+            <img src={logo} alt="MakeYorBrand Logo" className="h-40 w-40 rounded-md inline-block "/>
           </div>
           <div className="hidden md:flex gap-8 items-center">
             <a href="#services" className="hover:text-red-500 transition">Services</a>
@@ -476,7 +476,7 @@ export default function MakeYourBrand() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { name: 'Kannanalloor', address: 'Head office Kannanalloor Kollam', phone: '7306950143', email: 'hello@makeyourbrand.ae' },
+              { name: 'Kannanalloor', address: 'Head office Kannanalloor Kollam', phone: '7306950143', email: 'hello@makeyorbrand.com' },
              
             ].map((office, i) => (
               <div key={i} className="bg-gradient-to-br from-red-600/15 to-red-500/10 rounded-2xl p-8 border border-red-500/40 hover:border-red-500 transition">
@@ -551,7 +551,7 @@ export default function MakeYourBrand() {
           </div>
         </div>
         <div className="border-t border-red-600/20 pt-8 text-center text-gray-400">
-          <p className="mb-2 font-semibold">© 2025 MakeYourBrand. All rights reserved.</p>
+          <p className="mb-2 font-semibold">© 2025 MakeYorBrand. All rights reserved.</p>
           <p className="text-sm">Your #1 Business Setup Consultants in Dubai | Empowering Entrepreneurs Since 2010</p>
         </div>
       </footer>
