@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce8340db.css",
-    "main.js": "/static/js/main.74c07fbf.js",
+    "main.js": "/static/js/main.564a87a3.js",
     "static/js/453.ee6eb0f0.chunk.js": "/static/js/453.ee6eb0f0.chunk.js",
     "static/media/city.mp4": "/static/media/city.c26178fad9b67d583240.mp4",
     "static/media/free-zone.png": "/static/media/free-zone.309d0c8b83d973da5b96.png",
@@ -27,11 +27,11 @@
     "static/media/raleway-vietnamese-400-normal.woff": "/static/media/raleway-vietnamese-400-normal.1e28c9f184923aacc181.woff",
     "index.html": "/index.html",
     "main.ce8340db.css.map": "/static/css/main.ce8340db.css.map",
-    "main.74c07fbf.js.map": "/static/js/main.74c07fbf.js.map",
+    "main.564a87a3.js.map": "/static/js/main.564a87a3.js.map",
     "453.ee6eb0f0.chunk.js.map": "/static/js/453.ee6eb0f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce8340db.css",
-    "static/js/main.74c07fbf.js"
+    "static/js/main.564a87a3.js"
   ]
 }
